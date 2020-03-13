@@ -1,0 +1,32 @@
+package testejava1;
+
+import java.util.Scanner;
+
+public class Dolar {
+public static void main(String[] args) {
+    
+    
+    //declaração das variaveis
+    double dolar;
+    double real;
+    double valor;
+    
+    //valores
+    
+    real = 4.79;
+    
+    
+    Scanner in = new Scanner(System.in);
+    System.out.println("Digite o valor de conversão: ");
+    valor = in.nextDouble();
+    
+    //conta
+    dolar = valor/real;
+    
+    //espaçamento
+    System.out.println("\n\n\n\n\n");
+    
+    System.out.printf("valor total é: %.2f %n", dolar);
+    
+            }    
+}
