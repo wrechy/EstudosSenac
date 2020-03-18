@@ -1,0 +1,50 @@
+
+package reforcodosguri;
+
+//importando a função Scanner
+import java.util.Scanner;
+
+public class ReforcoDosGuri {
+
+
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+        //criando captura das informações digitadas
+    Scanner ez = new Scanner (System.in);
+        //criando variaveis,o valor delas será dado na captura dos valores apresentados pelo scanner
+    double nota1, nota2, nota3, nota4, media;
+        //printando requisição da inserção dos valores pelo usuario e atribuindo elas a cada uma das variaveis
+        System.out.println("digite a primeira nota");
+        nota1 = ez.nextDouble();
+        
+        System.out.println("digite a segunda nota");
+        nota2 = ez.nextDouble();
+        
+        System.out.println("digite a terceira nota");
+        nota3 = ez.nextDouble();
+        
+        System.out.println("digite a quarta nota");
+        nota4 = ez.nextDouble();
+        
+        //valor da variavel media
+        media =(nota1 + nota2 + nota3 + nota4) / 4;
+        
+        //espaçamento
+        System.out.println("\n\n\n\n\n");
+        //apresentando o valor da media, o comando %.1f limita o numero de casas exibidas na media,
+        //exemplos 5,470 passa para 5,4
+        System.out.printf("a media é: %.1f %n", media);
+       
+        if (media>= 7) {
+            System.out.println("A sua media final foi: " + media + " e vc foi aprovado");
+            
+        } else {
+            
+            System.out.println("A sua media final foi: " + media + " e vc foi reprovado");
+        }
+        
+        
+    }
+    
+}
